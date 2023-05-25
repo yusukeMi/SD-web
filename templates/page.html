@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Page</title>
+    </head>
+    <body>
+      <form action = "/" method = "POST">
+         <H1>画像生成アプリケーション</H1>
+         <h1>入力</h1>
+         <textarea type="text" name="prompt" placeholder="プロンプト"></textarea>
+         <br>
+         <input type="submit" value="実行">
+      </form>
+      <h1>出力</h1>
+      <p>
+         <img src="data:image/jpeg;base64,{{ encoded_image }}" alt="画像">
+      </p>
+   </body>
+</html>
